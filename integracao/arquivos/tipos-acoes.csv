@@ -1,0 +1,68 @@
+tipos-acoes,17,AÇÃO ANULATÓRIA
+tipos-acoes,27,AÇÃO CAUTELAR
+tipos-acoes,1,ACAO CIVIL PUBLICA
+tipos-acoes,55,AÇÃO COLETIVA
+tipos-acoes,6,AÇÃO CRIMINAL
+tipos-acoes,5,ACAO AMBIENTAL
+tipos-acoes,54,AÇÃO DE ALIMENTOS
+tipos-acoes,9,AÇÃO DE COBRANÇA
+tipos-acoes,39,AÇÃO DE CONSIGNAÇÃO E PAGAMENTO
+tipos-acoes,65,AÇÃO DE CUMPRIMENTO
+tipos-acoes,52,AÇÃO DE CUMPRIMENTO DE SENTENÇA
+tipos-acoes,15,AÇÃO DE DESPEJO
+tipos-acoes,7,AÇÃO DE INDENIZAÇÃO
+tipos-acoes,11,ACAO DE OBRIGACAO DE FAZER
+tipos-acoes,10,AÇÃO DE REPETIÇÃO DE INDEBITO
+tipos-acoes,59,AÇÃO DE USUCAPIÃO
+tipos-acoes,23,AÇÃO DECLARATÓRIA
+tipos-acoes,16,AÇÃO MONITÓRIA
+tipos-acoes,20,AÇÃO ORDINÁRIA
+tipos-acoes,2,ACAO PENAL
+tipos-acoes,14,ACAO PREPARATORIA DE EXIBICAO DE DOCUMENTOS
+tipos-acoes,19,AÇÃO RENOVATÓRIA
+tipos-acoes,28,AÇÃO RESCISÓRIA
+tipos-acoes,8,AÇÃO REVISIONAL
+tipos-acoes,12,AGRAVO
+tipos-acoes,68,ALVARÁ JUDICIAL
+tipos-acoes,49,APELAÇÃO
+tipos-acoes,29,AUTO DE INFRAÇÃO
+tipos-acoes,62,AUTO DE INFRAÇÃO E IMPOSIÇÃO DE MULTA
+tipos-acoes,21,BUSCA E APREENSAO
+tipos-acoes,42,CARTA DE SENTENÇA
+tipos-acoes,38,CARTA PRECATÓRIA
+tipos-acoes,30,CONSIGNAÇÃO EM PAGAMENTO
+tipos-acoes,64,CONSULTA FISCAL
+tipos-acoes,61,CUMPRIMENTO DE SENTENÇA
+tipos-acoes,31,DISSÍDIO COLETIVO
+tipos-acoes,25,EMBARGOS À EXECUÇÃO
+tipos-acoes,66,EMBARGOS DE DECLARAÇÃO INCIDENTE
+tipos-acoes,32,EMBARGOS DE TERCEIRO
+tipos-acoes,51,EXCEÇÃO DE INCOMPETÊNCIA 
+tipos-acoes,22,EXECUCAO
+tipos-acoes,69,EXECUÇÃO DE TAC
+tipos-acoes,60,Execução de Título Extrajudicial
+tipos-acoes,18,EXECUÇÃO FISCAL
+tipos-acoes,41,HABILITAÇÃO DE CRÉDITO
+tipos-acoes,44,IMPUGNAÇÃO
+tipos-acoes,26,IMPUGNAÇÃO AO VALOR DA CAUSA
+tipos-acoes,57,INCIDENTE DE UNIFORMIZAÇÃO JURISPRUDENCIAL
+tipos-acoes,34,INQUÉRITO CÍVIL
+tipos-acoes,33,INQUERITO DE APURAÇÃO DE FALTA
+tipos-acoes,35,INTERDITO PROIBITÓRIO
+tipos-acoes,47,INVENTÁRIO
+tipos-acoes,24,MANDADO DE SEGURANÇA
+tipos-acoes,45,NOTIFICAÇÃO FISCAL
+tipos-acoes,63,PEDIDO DE IMUNIDADE
+tipos-acoes,36,PROCEDIMENTO INVESTIGATÓRIO
+tipos-acoes,70,PROCEDIMENTO PROMOCIONAL 
+tipos-acoes,43,PROCESSO ADMINISTRATIVO
+tipos-acoes,40,PROCESSO ADMINISTRATIVO DISCIPLINAR
+tipos-acoes,56,PRODUÇÃO ANTECIPADA DE PROVA
+tipos-acoes,50,PROTESTO JUDICIAL
+tipos-acoes,53,RECLAMAÇÃO CONSTITUCIONAL
+tipos-acoes,13,RECLAMAÇÃO TRABALHISTA
+tipos-acoes,37,RECONVENÇÃO
+tipos-acoes,46,RECUPERAÇÃO JUDICIAL
+tipos-acoes,48,RECURSO ESPECIAL
+tipos-acoes,67,Recurso Extraordinário
+tipos-acoes,58,REINTEGRAÇÃO DE POSSE

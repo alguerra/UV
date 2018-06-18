@@ -1,0 +1,73 @@
+<html>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script>
+	function traduzir() {
+		$("#entidades").empty();
+		$("#entidades").append("Aguarde...");
+
+		
+		$.post( "/nlu", { texto: $("#textodocumento").val() })
+	 	 .done(function( data ) {
+	 	 	$("#entidades").empty();
+
+			data = JSON.parse(data);
+			console.log(data);
+	 	 	if(data.entities.length > 0) {
+	   			data.entities.forEach(function(elemento){
+
+	   				$("#entidades").append("<strong>" + elemento.type  + ":  " + "</strong>" + elemento.text);
+	   				$("#entidades").append("<br>");
+	   			}); 
+	   		} else {
+	   			$("#entidades").append(JSON.stringify(data));
+	   		}
+	   		
+	  	});
+    }
+
+	$(function() {
+
+	    var form;
+	    $('#arquivo').change(function (event) {
+	        form = new FormData();
+	        form.append('arquivo', event.target.files[0]);
+	         // para apenas 1 arquivo
+	        //var name = event.target.files[0].content.name; // para capturar o nome do arquivo com sua extenção
+	    });
+
+	    $('#btnEnviar').click(function () {
+	        $.ajax({
+	            url: '/pdftotext', 
+	            data: form,
+	            processData: false,
+	            contentType: false,
+	            type: 'POST',
+	            success: function (data) {
+	                $("#textodocumento").val(data);
+	            }
+	        });
+	    });
+	});
+</script>
+
+
+<div class="col-md-12">
+	<img src="logo_maind.png" style="max-width: 150px"/>
+	<h3>Ambiente de Homologação - Maind/Watson</h3>
+	<div class="col-md-4">
+		<input class="form-control" type="file" id="arquivo" name="arquivo" />
+		<input class="btn btn-primary" type="button" id="btnEnviar" value="Submeter arquivo" />
+		<br>
+		<br>
+		<textarea rows="15" cols="80"  id="textodocumento"></textarea>
+		<br>
+		<br>
+		<input class="btn btn-success" type="button" onclick="traduzir()" id="traduzir" value="Interpretar" />
+	</div>
+	<div class="col-md-2"></div>
+	<div class="col-md-6">
+		<div id="entidades"></div> 
+	</div>
+</div>
+</html>
