@@ -9,6 +9,7 @@ dicionario = {
     "c": 3
 }
 s = "teste com string"
+b = "Outra string de texto"
 
 
 #for i in s:
