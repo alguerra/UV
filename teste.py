@@ -1,6 +1,7 @@
 import math
 import datetime
 import time
+import sqlite3
 
 
 dicionario = {
@@ -11,6 +12,9 @@ dicionario = {
 s = "teste com string"
 b = "Outra string de texto"
 
+con = sqlite3.connect("db")
+cur = con.cursor()
+print(type(cur))
 
 #for i in s:
     #print(i)
