@@ -1,8 +1,9 @@
-
+var util = require("./util.js");
 var multer = require('multer');
 var upload = multer({ dest: 'uploads/' });
 var fs = require("fs");
 const { exec } = require('child_process');
+
 
 
 module.exports = function(app) {
@@ -25,7 +26,8 @@ module.exports = function(app) {
                 console.log("erro na leitura do arquivo temporario");
               }
               if(resultado){
-                res.send(resultado.toString());
+                result = util.removerAcentos(resultado.toString());
+                res.send(result.toLowerCase());
                 res.end();
               } else {
                 res.send("erro");
